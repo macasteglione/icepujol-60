@@ -1,0 +1,40 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 32, 71, .7), rgba(0, 32, 71, .4)), url("../../assets/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+}
+
+.hero-text p {
+    font-size: 25px;
+    max-width: 700px;
+    margin: 40px 0 40px;
+    line-height: 1.4;
+    color: rgb(223, 223, 223);
+}
+
+/* Media Query */
+
+
+@media (max-width: 750px) {
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+}

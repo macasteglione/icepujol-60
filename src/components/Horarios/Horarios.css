@@ -1,0 +1,33 @@
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio h1{
+    margin: 1.8rem 0;
+    width: 50%;
+    font-weight: 400;
+}
+
+.radio audio {
+    width: 50%;
+}
+
+/* Media Query */
+
+@media (max-width: 600px) {
+    .radio {
+        display:grid;
+       justify-content:center;
+    }
+
+    .radio h1 {
+        font-size: 23px;
+        width: 100%;
+    }
+
+    .radio audio {
+        width: 100%;
+    }
+}
