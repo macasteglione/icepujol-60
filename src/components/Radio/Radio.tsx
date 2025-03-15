@@ -12,7 +12,7 @@ import {
     TableHead,
     TableRow,
 } from "@mui/material";
-import logoImg from "../../assets/radioLogo.png";
+import logoImg from "../../assets/buenasNuevas.png";
 
 const StyledTableCell = styled(TableCell)(({}) => ({
     [`&.${tableCellClasses.head}`]: {
