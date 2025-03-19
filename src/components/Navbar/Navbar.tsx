@@ -73,7 +73,9 @@ const Navbar = () => {
                     </a>
                 </li>
             </ul>
-            <IoMenu size={menuIconSize} className="menu-icon" onClick={toggleMenu}/>
+            <div className="menu-icon" onClick={toggleMenu}>
+                <IoMenu size={menuIconSize} />
+            </div>
         </nav>
     );
 };
