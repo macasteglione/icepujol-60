@@ -1,11 +1,12 @@
 import "./Navbar.css";
-import menuIcon from "../../assets/menu-icon.png";
+import { IoMenu } from "react-icons/io5";
 import logo from "../../assets/logo.svg";
 import {useEffect, useState} from "preact/hooks";
 import {Link} from "react-scroll";
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
+    const menuIconSize = 30
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -18,6 +19,7 @@ const Navbar = () => {
         mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
     };
 
+    // @ts-ignore
     return (
         <nav className={`container ${sticky ? "dark-nav" : ""}`}>
             <img src={logo} alt="Logo" className="logo"/>
@@ -71,12 +73,7 @@ const Navbar = () => {
                     </a>
                 </li>
             </ul>
-            <img
-                src={menuIcon}
-                alt="Menu Icon"
-                className="menu-icon"
-                onClick={toggleMenu}
-            />
+            <IoMenu size={menuIconSize} className="menu-icon" onClick={toggleMenu}/>
         </nav>
     );
 };
