@@ -67,7 +67,7 @@ const Radio = ({sourceRef}) => {
         {hora: "15:30", programa: "Renovando Tu Mente"},
         {hora: "16:00", programa: "Jungla Semántica - Luis Palau Responde"},
         {hora: "16:30", programa: "A Través de la Biblia"},
-        {hora: "17:00", programa: "La Verdad en el Tubo de Ensayo"},
+        {hora: "17:00", programa: "Pedrito el Pulpo"},
         {hora: "17:30", programa: "El Amor Que Vale"},
         {hora: "18:00", programa: "Crianza Reverente"},
         {hora: "18:30", programa: "Aviva Nuestros Corazones"},
