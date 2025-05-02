@@ -35,52 +35,70 @@ const StyledTableRow = styled(TableRow)(({theme}) => ({
 
 // @ts-ignore
 const Radio = ({sourceRef}) => {
-    const horarios = [
-        {hora: "00:00", programa: "Lectura Pública de la Biblia"},
-        {hora: "00:30", programa: "A Través de la Biblia - Luis Palau Responde"},
-        {hora: "01:00", programa: "Predicación del Evangelio"},
-        {hora: "02:00", programa: "Crianza Reverente"},
-        {hora: "02:30", programa: "Tierra Firme"},
-        {hora: "03:00", programa: "Correr para Ganar"},
-        {hora: "03:30", programa: "Aviva Nuestros Corazones"},
-        {hora: "4:00", programa: "La Verdad en el Tubo de Ensayo"},
-        {hora: "4:30", programa: "De la Biblia a la vida"},
-        {hora: "5:00", programa: "Jungla Semántica"},
-        {hora: "5:30", programa: "Gracia a Vosotros"},
-        {hora: "6:00", programa: "Momento Decisivo - Luis Palau Responde"},
-        {hora: "6:30", programa: "Renovando Tu Mente"},
-        {hora: "7:00", programa: "Predicación del Evangelio"},
-        {hora: "8:00", programa: "Jungla Semántica - Luis Palau Responde"},
-        {hora: "08:30", programa: "El Amor Que Vale"},
-        {hora: "09:00", programa: "Lectura Pública de la Biblia"},
-        {hora: "09:30", programa: "Tierra Firme"},
+    const programacionDia1 = [
+        {hora: "00:00", programa: "A Través de la Biblia"},
+        {hora: "01:00", programa: "Crianza Reverente"},
+        {hora: "02:00", programa: "Correr para Ganar"},
+        {hora: "03:00", programa: "Entre Amigas"},
+        {hora: "4:00", programa: "El Amor Que Vale"},
+        {hora: "5:00", programa: "Progr. Infantil (Viajeros)"},
+        {hora: "6:00", programa: "Pedrito el Pulpo"},
+        {hora: "7:00", programa: "Momento Decisivo"},
+        {hora: "8:00", programa: "Predicación del Evangelio"},
+        {hora: "09:00", programa: "Jungla Semántica"},
         {hora: "10:00", programa: "La Verdad en el Tubo de Ensayo"},
-        {hora: "10:30", programa: "Aviva Nuestros Corazones"},
-        {hora: "11:00", programa: "Cambios Profundos"},
-        {hora: "11:30", programa: "A Través de la Biblia"},
-        {hora: "12:00", programa: "Correr para Ganar"},
-        {hora: "12:30", programa: "De la Biblia a la vida"},
-        {hora: "13:00", programa: "Momento Decisivo - Luis Palau Responde"},
-        {hora: "13:30", programa: "Gracia a Vosotros"},
-        {hora: "14:00", programa: "Predicación del Evangelio"},
-        {hora: "15:00", programa: "Crianza Reverente"},
-        {hora: "15:30", programa: "Renovando Tu Mente"},
-        {hora: "16:00", programa: "Jungla Semántica - Luis Palau Responde"},
-        {hora: "16:30", programa: "A Través de la Biblia"},
-        {hora: "17:00", programa: "Pedrito el Pulpo"},
-        {hora: "17:30", programa: "El Amor Que Vale"},
-        {hora: "18:00", programa: "Crianza Reverente"},
-        {hora: "18:30", programa: "Aviva Nuestros Corazones"},
-        {hora: "19:00", programa: "Lectura Pública de la Biblia"},
-        {hora: "19:30", programa: "Tierra Firme"},
+        {hora: "11:00", programa: "Estudio Bíblico - Luis Palau Responde"},
+        {hora: "12:00", programa: "A Través de la Biblia"},
+        {hora: "13:00", programa: "Crianza Reverente"},
+        {hora: "14:00", programa: "Correr para Ganar"},
+        {hora: "15:00", programa: "Entre Amigas"},
+        {hora: "16:00", programa: "El Amor Que Vale"},
+        {hora: "17:00", programa: "Progr. Infantil (Viajeros)"},
+        {hora: "18:00", programa: "Pedrito el Pulpo"},
+        {hora: "19:00", programa: "Momento Decisivo"},
         {hora: "20:00", programa: "Predicación del Evangelio"},
-        {hora: "21:00", programa: "Cambios Profundos"},
-        {hora: "21:30", programa: "Gracia a Vosotros"},
-        {hora: "22:00", programa: "Correr para Ganar"},
-        {hora: "22:30", programa: "Renovando Tu Mente"},
-        {hora: "23:00", programa: "Momento Decisivo - Luis Palau Responde"},
-        {hora: "23:30", programa: "De la Biblia a la vida"},
-    ];
+        {hora: "21:00", programa: "Jungla Semántica"},
+        {hora: "22:00", programa: "La Verdad en el Tubo de Ensayo"},
+        {hora: "23:00", programa: "Estudio Bíblico - Luis Palau Responde"},
+    ]
+
+    const programacionDia2 = [
+        {hora: "00:00", programa: "Lectura Pública de la Biblia"},
+        {hora: "01:00", programa: "Aviva Nuestros Corazones"},
+        {hora: "02:00", programa: "De la Biblia a la vida"},
+        {hora: "03:00", programa: "Revista Radial"},
+        {hora: "4:00", programa: "Preguntas y Respuestas - Luis Palau Responde"},
+        {hora: "5:00", programa: "Cambios Profundos"},
+        {hora: "6:00", programa: "Renovando Tu Mente"},
+        {hora: "7:00", programa: "Gracia a Vosotros"},
+        {hora: "8:00", programa: "Predicación del Evangelio"},
+        {hora: "09:00", programa: "Tierra Firme"},
+        {hora: "10:00", programa: "Estudio Bíblico - Luis Palau Responde"},
+        {hora: "11:00", programa: "Bonus Track Jóvenes"},
+        {hora: "12:00", programa: "Lectura Pública de la Biblia"},
+        {hora: "13:00", programa: "Aviva Nuestros Corazones"},
+        {hora: "14:00", programa: "De la Biblia a la vida"},
+        {hora: "15:00", programa: "Revista Radial"},
+        {hora: "16:00", programa: "Preguntas y Respuestas - Luis Palau Responde"},
+        {hora: "17:00", programa: "Cambios Profundos"},
+        {hora: "18:00", programa: "Renovando Tu Mente"},
+        {hora: "19:00", programa: "Gracia a Vosotros"},
+        {hora: "20:00", programa: "Predicación del Evangelio"},
+        {hora: "21:00", programa: "Tierra Firme"},
+        {hora: "22:00", programa: "Estudio Bíblico - Luis Palau Responde"},
+        {hora: "23:00", programa: "Bonus Track Jóvenes"},
+    ]
+
+    const diasSemana = ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"];
+    const horariosPorDia: any = {
+        domingo: programacionDia1,
+        lunes: programacionDia1,
+        martes: programacionDia2,
+        miercoles: programacionDia1,
+        jueves: programacionDia2,
+        viernes: programacionDia1,
+        sabado: programacionDia2,
+    };
 
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
@@ -118,6 +136,9 @@ const Radio = ({sourceRef}) => {
         else handlePlay()
     }
 
+    const diaActual = diasSemana[new Date().getDay()];
+    const horarios = horariosPorDia[diaActual] || [];
+
     function formatTime(durationSeconds: number) {
         const minutes = Math.floor(durationSeconds / 60);
         const seconds = Math.floor(durationSeconds % 60);
@@ -135,6 +156,7 @@ const Radio = ({sourceRef}) => {
         }
     }, [])
 
+    // @ts-ignore
     return (
         <div className="radio">
             <div className="player-card">
@@ -161,7 +183,6 @@ const Radio = ({sourceRef}) => {
                     </span>
                 </button>
             </div>
-
             <div className="horarios-programas">
                 <TableContainer component={Paper} sx={{maxHeight: 400, overflow: 'auto'}}>
                     <Table stickyHeader>
@@ -178,12 +199,8 @@ const Radio = ({sourceRef}) => {
                         <TableBody>
                             {horarios.map((row: any, index: any) => (
                                 <StyledTableRow key={index}>
-                                    <StyledTableCell align="center">
-                                        {row.hora}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="center">
-                                        {row.programa}
-                                    </StyledTableCell>
+                                    <StyledTableCell align="center">{row.hora}</StyledTableCell>
+                                    <StyledTableCell align="center">{row.programa}</StyledTableCell>
                                 </StyledTableRow>
                             ))}
                         </TableBody>
