@@ -35,7 +35,7 @@ const StyledTableRow = styled(TableRow)(({theme}) => ({
 
 // @ts-ignore
 const Radio = ({sourceRef}) => {
-    const programacionDia1 = [
+    const programacionDia2 = [
         {hora: "00:00", programa: "A Través de la Biblia"},
         {hora: "01:00", programa: "Crianza Reverente"},
         {hora: "02:00", programa: "Correr para Ganar"},
@@ -62,7 +62,7 @@ const Radio = ({sourceRef}) => {
         {hora: "23:00", programa: "Estudio Bíblico - Luis Palau Responde"},
     ]
 
-    const programacionDia2 = [
+    const programacionDia1 = [
         {hora: "00:00", programa: "Lectura Pública de la Biblia"},
         {hora: "01:00", programa: "Aviva Nuestros Corazones"},
         {hora: "02:00", programa: "De la Biblia a la vida"},
