@@ -71,7 +71,7 @@ const Radio = ({sourceRef}) => {
         {hora: "16:30", programa: "Renovando Tu Mente"},
         {hora: "17:00", programa: "Pedrito el Pulpo"},
         {hora: "17:30", programa: "Viajeros"},
-        {hora: "18:00", programa: "Cambios Profundos"},
+        {hora: "18:00", programa: "Melodias con Historias"},
         {hora: "18:30", programa: "Micro mensajes"},
         {hora: "19:00", programa: "Revista Radial"},
         {hora: "19:30", programa: "La Verdad en el Tubo de Ensayo"},
@@ -80,8 +80,7 @@ const Radio = ({sourceRef}) => {
         {hora: "21:30", programa: "Jungla Semántica"},
         {hora: "22:00", programa: "Lectura Pública de la Biblia"},
         {hora: "22:30", programa: "Gracia a Vosotros"},
-        {hora: "23:00", programa: "Preguntas y Respuestas"},
-        {hora: "23:30", programa: "Bonus Track"},
+        {hora: "23:00", programa: "Música Clásica"},
     ];
 
     const [isPlaying, setIsPlaying] = useState(false);
