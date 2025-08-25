@@ -5,25 +5,34 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Horarios from "./components/Horarios/Horarios";
 import Title from "./components/Title/Title";
-import {SpeedInsights} from "@vercel/speed-insights/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Radio from "./components/Radio/Radio.tsx";
+import { useEffect } from "preact/hooks";
+import "./i18n.ts";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+    const { i18n, t } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(navigator.language);
+        document.title = t("pageTitle");
+    }, [i18n.language]);
+
     return (
         <div>
-            <SpeedInsights/>
-            <Navbar/>
-            <Hero/>
+            <SpeedInsights />
+            <Navbar />
+            <Hero />
             <div className="container">
-                <About/>
-                <Title subtitle="Actividades" title="Horarios de Reuniones"/>
-                <Horarios/>
-                <Title subtitle="Radio" title="Escúchanos en VIVO"/>
-                <Radio sourceRef="https://stream.ice-pm.com/play"/>
-                <Title subtitle="Contáctanos" title="Póngase en Contacto"/>
-                <Contact/>
+                <About />
+                <Title subtitle={t("horariosTitle")} title={t("horariosSubtitle")} />
+                <Horarios />
+                <Title subtitle={t("radioTitle")} title={t("radioSubtitle")} />
+                <Radio sourceRef="https://stream.ice-pm.com/play" />
+                <Title subtitle={t("contactTitle")} title={t("contactSubtitle")} />
+                <Contact />
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };

@@ -1,13 +1,15 @@
 import "./Contact.css";
 import messageIcon from "../../assets/msg-icon.png";
-import {useRef, useState} from "preact/compat";
+import { useRef, useState } from "preact/compat";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
-import {FaWhatsapp} from "react-icons/fa";
-import {IoIosArrowRoundForward, IoIosMail} from "react-icons/io";
-import {FaLocationDot} from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoIosArrowRoundForward, IoIosMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 
 const Contact = () => {
+    const { t } = useTranslation();
     const [result, setResult] = useState("");
     const [token, setToken] = useState<any>(null);
     const captcha = useRef<HCaptcha>(null);
@@ -19,7 +21,7 @@ const Contact = () => {
         event.preventDefault();
 
         if (token) {
-            setResult("Enviando...");
+            setResult(t("contactCaptchaSending"));
             const formData = new FormData(event.target);
 
             formData.append("access_key", import.meta.env.VITE_WEB3FORMS);
@@ -33,7 +35,7 @@ const Contact = () => {
             const data = await response.json();
 
             if (data.success) {
-                setResult("Formulario Enviado con Éxito");
+                setResult(t("contactCaptchaSuccess"));
                 event.target.reset();
                 captcha.current?.resetCaptcha();
                 setToken(null);
@@ -49,17 +51,13 @@ const Contact = () => {
         <div className="contact">
             <div className="contact-col">
                 <h3>
-                    Envíanos un Mensaje
-                    <img src={messageIcon} alt="Message Icon"/>
+                    {t("contactSendUsAMessage")}
+                    <img src={messageIcon} alt="Message Icon" />
                 </h3>
-                <p>
-                    No dudes en ponerse en contacto con nosotros a través del
-                    formulario o información de contacto. Sus comentarios,
-                    preguntas y sugerencias son importantes para nosotros.
-                </p>
+                <p>{t("contactDescription")}</p>
                 <ul className="icon-socials">
                     <li>
-                        <IoIosMail size={icon_size} color={icon_color}/>
+                        <IoIosMail size={icon_size} color={icon_color} />
                         <a
                             href="mailto:icepuertomadryn@gmail.com"
                             target="_blank"
@@ -68,7 +66,7 @@ const Contact = () => {
                         </a>
                     </li>
                     <li>
-                        <FaWhatsapp size={icon_size} color={icon_color}/>
+                        <FaWhatsapp size={icon_size} color={icon_color} />
                         <a
                             href="https://wa.me/message/4Y5M6OZDSN6EN1"
                             target="_blank"
@@ -77,7 +75,7 @@ const Contact = () => {
                         </a>
                     </li>
                     <li>
-                        <FaLocationDot size={icon_size} color={icon_color}/>
+                        <FaLocationDot size={icon_size} color={icon_color} />
                         <a
                             href="https://maps.app.goo.gl/FPFBwp9jTRPLLM7KA"
                             target="_blank"
@@ -89,25 +87,25 @@ const Contact = () => {
             </div>
             <div className="contact-col">
                 <form onSubmit={onSubmit}>
-                    <label>Su Nombre</label>
+                    <label>{t("contactName")}</label>
                     <input
                         type="text"
                         name="nombre"
-                        placeholder="Escriba su Nombre"
+                        placeholder={t("contactNamePlaceholder")}
                         required
                     />
-                    <label>Número de Teléfono</label>
+                    <label>{t("contactPhone")}</label>
                     <input
                         type="tel"
                         name="telefono"
-                        placeholder="Escriba su Número de Móvil"
+                        placeholder={t("contactPhonePlaceholder")}
                         required
                     />
-                    <label>Escriba aquí sus mensajes</label>
+                    <label>{t("contactMessage")}</label>
                     <textarea
                         name="mensaje"
                         rows={6}
-                        placeholder="Escriba su Mensaje"
+                        placeholder={t("contactMessagePlaceholder")}
                         required
                     ></textarea>
                     <div className="recaptcha">
@@ -121,11 +119,11 @@ const Contact = () => {
                     </div>
                     {token === false && (
                         <div className="error-captcha">
-                            Por favor acepta el captcha
+                            {t("contactCaptchaError")}
                         </div>
                     )}
                     <button type="submit" className="btn dark-btn">
-                        Enviar Ahora <IoIosArrowRoundForward size={icon_size}/>
+                        {t("contactMessageSubmit")} <IoIosArrowRoundForward size={icon_size} />
                     </button>
                 </form>
                 <span>{result}</span>

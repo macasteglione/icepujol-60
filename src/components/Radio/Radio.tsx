@@ -1,6 +1,6 @@
 import "./Radio.css";
-import {useEffect, useState} from "preact/hooks";
-import {useRef} from "preact/compat";
+import { useEffect, useState } from "preact/hooks";
+import { useRef } from "preact/compat";
 import {
     Paper,
     styled,
@@ -13,8 +13,9 @@ import {
     TableRow,
 } from "@mui/material";
 import logoImg from "../../assets/buenasNuevas.png";
+import { useTranslation } from "react-i18next";
 
-const StyledTableCell = styled(TableCell)(({}) => ({
+const StyledTableCell = styled(TableCell)(({ }) => ({
     [`&.${tableCellClasses.head}`]: {
         backgroundColor: "#d0dbee",
         color: "#18181f",
@@ -24,7 +25,7 @@ const StyledTableCell = styled(TableCell)(({}) => ({
     },
 }));
 
-const StyledTableRow = styled(TableRow)(({theme}) => ({
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
     "&:nth-of-type(odd)": {
         backgroundColor: theme.palette.action.hover,
     },
@@ -34,53 +35,54 @@ const StyledTableRow = styled(TableRow)(({theme}) => ({
 }));
 
 // @ts-ignore
-const Radio = ({sourceRef}) => {
+const Radio = ({ sourceRef }) => {
+    const { t } = useTranslation();
     const horarios = [
-        {hora: "00:00", programa: "A Través de la Biblia"},
-        {hora: "00:30", programa: "Crianza Reverente"},
-        {hora: "01:00", programa: "Correr para Ganar"},
-        {hora: "01:30", programa: "Momento Decisivo"},
-        {hora: "02:00", programa: "El Amor Que Vale"},
-        {hora: "02:30", programa: "Micro mensajes"},
-        {hora: "03:00", programa: "Entre Amigas"},
-        {hora: "03:30", programa: "Aviva Nuestros Corazones"},
-        {hora: "04:00", programa: "De la Biblia a la vida"},
-        {hora: "04:30", programa: "Renovando Tu Mente"},
-        {hora: "05:00", programa: "Predicación del Evangelio"},
-        {hora: "06:00", programa: "Pedrito el Pulpo"},
-        {hora: "06:30", programa: "Viajeros"},
-        {hora: "07:00", programa: "Revista Radial"},
-        {hora: "07:30", programa: "La Verdad en el Tubo de Ensayo"},
-        {hora: "08:00", programa: "Cambios Profundos"},
-        {hora: "08:30", programa: "Micro mensajes"},
-        {hora: "09:00", programa: "Tierra Firme"},
-        {hora: "09:30", programa: "Jungla Semántica"},
-        {hora: "10:00", programa: "Lectura Pública de la Biblia"},
-        {hora: "10:30", programa: "Gracia a Vosotros"},
-        {hora: "11:00", programa: "Preguntas y Respuestas"},
-        {hora: "11:30", programa: "Bonus Track"},
-        {hora: "12:00", programa: "A Través de la Biblia"},
-        {hora: "12:30", programa: "Crianza Reverente"},
-        {hora: "13:00", programa: "Correr para Ganar"},
-        {hora: "13:30", programa: "Momento Decisivo"},
-        {hora: "14:00", programa: "El Amor Que Vale"},
-        {hora: "14:30", programa: "Micro mensajes"},
-        {hora: "15:00", programa: "Entre Amigas"},
-        {hora: "15:30", programa: "Aviva Nuestros Corazones"},
-        {hora: "16:00", programa: "De la Biblia a la vida"},
-        {hora: "16:30", programa: "Renovando Tu Mente"},
-        {hora: "17:00", programa: "Pedrito el Pulpo"},
-        {hora: "17:30", programa: "Viajeros"},
-        {hora: "18:00", programa: "Melodias con Historias"},
-        {hora: "18:30", programa: "Micro mensajes"},
-        {hora: "19:00", programa: "Revista Radial"},
-        {hora: "19:30", programa: "La Verdad en el Tubo de Ensayo"},
-        {hora: "20:00", programa: "Predicación del Evangelio"},
-        {hora: "21:00", programa: "Tierra Firme"},
-        {hora: "21:30", programa: "Jungla Semántica"},
-        {hora: "22:00", programa: "Lectura Pública de la Biblia"},
-        {hora: "22:30", programa: "Gracia a Vosotros"},
-        {hora: "23:00", programa: "Música Clásica"},
+        { hora: "00:00", programa: "A Través de la Biblia" },
+        { hora: "00:30", programa: "Crianza Reverente" },
+        { hora: "01:00", programa: "Correr para Ganar" },
+        { hora: "01:30", programa: "Momento Decisivo" },
+        { hora: "02:00", programa: "El Amor Que Vale" },
+        { hora: "02:30", programa: "Micro mensajes" },
+        { hora: "03:00", programa: "Entre Amigas" },
+        { hora: "03:30", programa: "Aviva Nuestros Corazones" },
+        { hora: "04:00", programa: "De la Biblia a la vida" },
+        { hora: "04:30", programa: "Renovando Tu Mente" },
+        { hora: "05:00", programa: "Predicación del Evangelio" },
+        { hora: "06:00", programa: "Pedrito el Pulpo" },
+        { hora: "06:30", programa: "Viajeros" },
+        { hora: "07:00", programa: "Revista Radial" },
+        { hora: "07:30", programa: "La Verdad en el Tubo de Ensayo" },
+        { hora: "08:00", programa: "Cambios Profundos" },
+        { hora: "08:30", programa: "Micro mensajes" },
+        { hora: "09:00", programa: "Tierra Firme" },
+        { hora: "09:30", programa: "Jungla Semántica" },
+        { hora: "10:00", programa: "Lectura Pública de la Biblia" },
+        { hora: "10:30", programa: "Gracia a Vosotros" },
+        { hora: "11:00", programa: "Preguntas y Respuestas" },
+        { hora: "11:30", programa: "Bonus Track" },
+        { hora: "12:00", programa: "A Través de la Biblia" },
+        { hora: "12:30", programa: "Crianza Reverente" },
+        { hora: "13:00", programa: "Correr para Ganar" },
+        { hora: "13:30", programa: "Momento Decisivo" },
+        { hora: "14:00", programa: "El Amor Que Vale" },
+        { hora: "14:30", programa: "Micro mensajes" },
+        { hora: "15:00", programa: "Entre Amigas" },
+        { hora: "15:30", programa: "Aviva Nuestros Corazones" },
+        { hora: "16:00", programa: "De la Biblia a la vida" },
+        { hora: "16:30", programa: "Renovando Tu Mente" },
+        { hora: "17:00", programa: "Pedrito el Pulpo" },
+        { hora: "17:30", programa: "Viajeros" },
+        { hora: "18:00", programa: "Melodias con Historias" },
+        { hora: "18:30", programa: "Micro mensajes" },
+        { hora: "19:00", programa: "Revista Radial" },
+        { hora: "19:30", programa: "La Verdad en el Tubo de Ensayo" },
+        { hora: "20:00", programa: "Predicación del Evangelio" },
+        { hora: "21:00", programa: "Tierra Firme" },
+        { hora: "21:30", programa: "Jungla Semántica" },
+        { hora: "22:00", programa: "Lectura Pública de la Biblia" },
+        { hora: "22:30", programa: "Gracia a Vosotros" },
+        { hora: "23:00", programa: "Música Clásica" },
     ];
 
     const [isPlaying, setIsPlaying] = useState(false);
@@ -139,7 +141,7 @@ const Radio = ({sourceRef}) => {
     return (
         <div className="radio">
             <div className="player-card">
-                <img className="player-img" src={logoImg} alt="Cover Image"/>
+                <img className="player-img" src={logoImg} alt="Cover Image" />
 
                 <input
                     type="range"
@@ -164,15 +166,15 @@ const Radio = ({sourceRef}) => {
             </div>
 
             <div className="horarios-programas">
-                <TableContainer component={Paper} sx={{maxHeight: 400, overflow: 'auto'}}>
+                <TableContainer component={Paper} sx={{ maxHeight: 400, overflow: 'auto' }}>
                     <Table stickyHeader>
                         <TableHead>
                             <TableRow>
                                 <StyledTableCell align="center">
-                                    <h3>Hora</h3>
+                                    <h3>{t("radioHora")}</h3>
                                 </StyledTableCell>
                                 <StyledTableCell align="center">
-                                    <h3>Programa</h3>
+                                    <h3>{t("radioPrograma")}</h3>
                                 </StyledTableCell>
                             </TableRow>
                         </TableHead>

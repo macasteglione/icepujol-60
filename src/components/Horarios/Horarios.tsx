@@ -10,6 +10,7 @@ import {
     tableCellClasses,
 } from "@mui/material";
 import "./Horarios.css";
+import { useTranslation } from "react-i18next";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -31,10 +32,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 const Horarios = () => {
+    const { t } = useTranslation();
     const horarios = [
         {
             hora: "09:30",
-            domingo: "Santa Cena",
+            domingo: t("horariosSantaCena"),
             lunes: "-",
             martes: "-",
             miercoles: "-",
@@ -44,7 +46,7 @@ const Horarios = () => {
         },
         {
             hora: "11:00",
-            domingo: "Escuela Dominical",
+            domingo: t("horariosEscuelaDominical"),
             lunes: "-",
             martes: "-",
             miercoles: "-",
@@ -60,12 +62,12 @@ const Horarios = () => {
             miercoles: "-",
             jueves: "-",
             viernes: "-",
-            sabado: "Reunión de Preadolescentes",
+            sabado: t("horariosReunionPreadolescentes"),
         },
         {
             hora: "15:30",
             domingo: "-",
-            lunes: "Reunión Femenina",
+            lunes: t("horariosReunionFemenina"),
             martes: "-",
             miercoles: "-",
             jueves: "-",
@@ -80,11 +82,11 @@ const Horarios = () => {
             miercoles: "-",
             jueves: "-",
             viernes: "-",
-            sabado: "Reunión de Adolescentes",
+            sabado: t("horariosReunionAdolescentes"),
         },
         {
             hora: "19:00",
-            domingo: "Explicación del Evangelio",
+            domingo: t("horariosExplicacionEvangelio"),
             lunes: "-",
             martes: "-",
             miercoles: "-",
@@ -96,12 +98,12 @@ const Horarios = () => {
             hora: "20:00",
             domingo: "-",
             lunes: "-",
-            martes: "Reunión de Oración",
+            martes: t("horariosReunionOracion"),
             miercoles: "-",
-            jueves: "Estudio Bíblico",
+            jueves: t("horariosEstudioBiblico"),
             viernes: "-",
-            sabado: "Reunión de Jóvenes",
-        },
+            sabado: t("horariosReunionJovenes"),
+        }
     ];
 
     return (
@@ -111,28 +113,28 @@ const Horarios = () => {
                     <TableHead>
                         <TableRow>
                             <StyledTableCell align="center">
-                                <h3>Hora</h3>
+                                <h3>{t("horariosHora")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Domingo</h3>
+                                <h3>{t("horariosDomingo")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Lunes</h3>
+                                <h3>{t("horariosLunes")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Martes</h3>
+                                <h3>{t("horariosMartes")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Miércoles</h3>
+                                <h3>{t("horariosMiercoles")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Jueves</h3>
+                                <h3>{t("horariosJueves")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Viernes</h3>
+                                <h3>{t("horariosViernes")}</h3>
                             </StyledTableCell>
                             <StyledTableCell align="center">
-                                <h3>Sábado</h3>
+                                <h3>{t("horariosSabado")}</h3>
                             </StyledTableCell>
                         </TableRow>
                     </TableHead>

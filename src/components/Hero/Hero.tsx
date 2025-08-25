@@ -1,18 +1,19 @@
 import "./Hero.css";
-import {Link} from "react-scroll";
-import {IoIosArrowRoundForward} from "react-icons/io";
+import { Link } from "react-scroll";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
     const icon_size = 30;
+    const { t } = useTranslation();
 
     return (
         <div className="hero container">
             <div className="hero-text">
-                <h1>¡Jesús es la respuesta a tu necesidad!</h1>
+                <h1>{t("heroTitle")}</h1>
                 <p>
-                    Te esperamos en una de nuestras reuniones del fin de
-                    semana. Un tiempo para adorar juntos y oír la Palabra de
-                    Dios.
+                    {t("heroSubtitle")}
                 </p>
                 <Link
                     to="horarios"
@@ -21,7 +22,7 @@ const Hero = () => {
                     duration={500}
                     className="btn"
                 >
-                    Ver Horarios <IoIosArrowRoundForward size={icon_size}/>
+                    {t("heroTimetables")} <IoIosArrowRoundForward size={icon_size} />
                 </Link>
             </div>
         </div>
