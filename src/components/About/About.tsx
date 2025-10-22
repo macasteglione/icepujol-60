@@ -1,5 +1,5 @@
 import "./About.css";
-import aboutImg from "../../assets/about.jpg";
+import aboutImg from "../../assets/about1.jpeg";
 import { useTranslation } from "react-i18next";
 
 const About = () => {

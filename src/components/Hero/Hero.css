@@ -1,13 +1,14 @@
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 32, 71, .7), rgba(0, 32, 71, .4)), url("../../assets/hero.jpeg");
+    background: linear-gradient(rgba(0, 32, 71, .7), rgba(0, 32, 71, .4)), url("../../assets/hero1.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     display: flex;
     align-items: center;
     justify-content: left;
+    background-attachment: fixed;
 }
 
 .hero-text {

@@ -59,10 +59,10 @@ const Contact = () => {
                     <li>
                         <IoIosMail size={icon_size} color={icon_color} />
                         <a
-                            href="mailto:icepuertomadryn@gmail.com"
+                            href="mailto:contacto@ice-pm.com"
                             target="_blank"
                         >
-                            icepuertomadryn@gmail.com
+                            contacto@ice-pm.com
                         </a>
                     </li>
                     <li>

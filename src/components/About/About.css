@@ -7,12 +7,12 @@
 }
 
 .about-left {
-    flex-basis: 40%;
+    flex-basis: 50%;
     position: relative;
 }
 
 .about-right {
-    flex-basis: 56%;
+    flex-basis: 46%;
 }
 
 .about-img {
