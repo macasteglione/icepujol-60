@@ -1,19 +1,34 @@
 import "./Navbar.css";
 import { IoMenu } from "react-icons/io5";
 import logo from "../../assets/logo.svg";
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useState, useRef } from "preact/hooks";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
-    const menuIconSize = 30
+    const menuIconSize = 30;
     const { t } = useTranslation();
+    const navRef = useRef(null);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
             window.scrollY > 50 ? setSticky(true) : setSticky(false);
         });
+
+        // Agregar event listener para cerrar el menú al hacer clic fuera
+        const handleClickOutside = (event: MouseEvent) => {
+            if (navRef.current && !(navRef.current as any).contains(event.target)) {
+                setMobileMenu(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        // Cleanup del event listener
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
     }, []);
 
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -23,7 +38,7 @@ const Navbar = () => {
 
     // @ts-ignore
     return (
-        <nav className={`container ${sticky ? "dark-nav" : ""}`}>
+        <nav ref={navRef} className={`container ${sticky ? "dark-nav" : ""}`}>
             <img src={logo} alt="Logo" className="logo" />
             <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
                 <li>
