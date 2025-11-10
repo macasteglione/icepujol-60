@@ -1,0 +1,93 @@
+import { useEffect } from 'preact/hooks';
+
+interface SEOProps {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  canonical?: string;
+}
+
+const SEO = ({
+  title,
+  description,
+  keywords,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  canonical
+}: SEOProps) => {
+  useEffect(() => {
+    // Update title
+    if (title) {
+      document.title = title;
+    }
+
+    // Update meta description
+    if (description) {
+      let metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute('content', description);
+      }
+    }
+
+    // Update meta keywords
+    if (keywords) {
+      let metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (metaKeywords) {
+        metaKeywords.setAttribute('content', keywords);
+      }
+    }
+
+    // Update Open Graph title
+    if (ogTitle) {
+      let ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute('content', ogTitle);
+      }
+    }
+
+    // Update Open Graph description
+    if (ogDescription) {
+      let ogDescMeta = document.querySelector('meta[property="og:description"]');
+      if (ogDescMeta) {
+        ogDescMeta.setAttribute('content', ogDescription);
+      }
+    }
+
+    // Update Open Graph image
+    if (ogImage) {
+      let ogImageMeta = document.querySelector('meta[property="og:image"]');
+      if (ogImageMeta) {
+        ogImageMeta.setAttribute('content', ogImage);
+      }
+    }
+
+    // Update canonical URL
+    if (canonical) {
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) {
+        canonicalLink.setAttribute('href', canonical);
+      } else {
+        const link = document.createElement('link');
+        link.rel = 'canonical';
+        link.href = canonical;
+        document.head.appendChild(link);
+      }
+    }
+
+    // Update Open Graph URL
+    if (canonical) {
+      let ogUrlMeta = document.querySelector('meta[property="og:url"]');
+      if (ogUrlMeta) {
+        ogUrlMeta.setAttribute('content', canonical);
+      }
+    }
+  }, [title, description, keywords, ogTitle, ogDescription, ogImage, canonical]);
+
+  return null;
+};
+
+export default SEO;

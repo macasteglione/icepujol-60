@@ -2,15 +2,25 @@
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<!-- Sitemap for ICE-PM - Iglesia Cristiana Evangélica Puerto Madryn -->
 
-
+<!-- Home Page -->
 <url>
   <loc>https://ice-pm.com/</loc>
-  <lastmod>2024-07-19T15:39:55+00:00</lastmod>
+  <lastmod>2025-11-10</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
 </url>
 
+<!-- Confession of Faith Page -->
+<url>
+  <loc>https://ice-pm.com/confesion-de-fe</loc>
+  <lastmod>2025-11-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
 </urlset>

@@ -6,6 +6,7 @@ import Navbar from "../Navbar/Navbar";
 import Horarios from "../Horarios/Horarios";
 import Title from "../Title/Title";
 import Radio from "../Radio/Radio.tsx";
+import SEO from "../SEO/SEO";
 import { useTranslation } from "react-i18next";
 
 interface HomeProps {
@@ -17,6 +18,15 @@ const Home = (_props: HomeProps) => {
 
     return (
         <div>
+            <SEO
+                title={t("pageTitle")}
+                description="Somos una Iglesia Cristiana centrada en Jesucristo y su Palabra. Llevamos a nuestros miembros a expresar el objetivo bíblico de vivir para Dios y para los demás."
+                keywords="ice-pm, icepm, iglesia cristiana evangelica, iglesia, cristianismo, iglesia cristiana, jovenes, adolescentes, campamentos, grupos de jovenes, actividades, juegos, reuniones, alabanza, musica, coro, amistad, familia, fe, creencia, eventos, eventos especiales, iglesia evangelica, estudio biblico, biblia, ministerio, espiritualidad, dios, jesucristo, jesus, oracion, puerto madryn, argentina"
+                ogTitle="Iglesia Cristiana Evangélica - Puerto Madryn"
+                ogDescription="Somos una Iglesia Cristiana centrada en Jesucristo y su Palabra. Llevamos a nuestros miembros a expresar el objetivo bíblico de vivir para Dios y para los demás."
+                ogImage="https://ice-pm.com/logo-dark.svg"
+                canonical="https://ice-pm.com/"
+            />
             <Navbar />
             <Hero />
             <div className="container">

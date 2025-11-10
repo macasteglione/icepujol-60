@@ -4,6 +4,7 @@ import { useState, useEffect } from "preact/hooks";
 import { IoArrowUpCircle } from "react-icons/io5";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import SEO from "../SEO/SEO";
 
 interface ConfesionDeFeProp {
   path?: string;
@@ -39,6 +40,15 @@ const ConfesionDeFe = (_props: ConfesionDeFeProp) => {
 
   return (
     <div>
+      <SEO
+        title={`${t("confesionTitle")} - ICE-PM | Puerto Madryn`}
+        description="Nuestra confesión de fe completa describe nuestras creencias fundamentales, principios congregacionales, raíces históricas e identidad doctrinal como Iglesia Cristiana Evangélica."
+        keywords="confesion de fe, doctrina cristiana, creencias evangelicas, principios congregacionales, identidad doctrinal, iglesia cristiana, hermanos, movimiento de los hermanos, puerto madryn, ice-pm"
+        ogTitle={`${t("confesionTitle")} - ICE-PM`}
+        ogDescription="Nuestra confesión de fe completa describe nuestras creencias fundamentales, principios congregacionales, raíces históricas e identidad doctrinal como Iglesia Cristiana Evangélica."
+        ogImage="https://ice-pm.com/logo-dark.svg"
+        canonical="https://ice-pm.com/confesion-de-fe"
+      />
       <Navbar />
       <div className="confesion-container">
         <div className="confesion-content">
