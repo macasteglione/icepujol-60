@@ -69,6 +69,14 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Listen to us LIVE",
         radioHora: "Time",
         radioPrograma: "Program",
+        viewConfesion: "View Statement of Faith",
+        backToHome: "Back to Home",
+        confesionTitle: "Statement of Faith",
+        confesionText: "Our complete statement of faith is available in Spanish. This document outlines our core beliefs, congregational principles, historical roots, and doctrinal identity as an Evangelical Christian Church.",
+        confesionNote: "Note: The complete text of our Statement of Faith is currently available in Spanish only, as it represents the foundational documents of our church community in Argentina.",
+        footerContactTitle: "Contact",
+        footerFollowTitle: "Follow Us",
+        tableOfContents: "Table of Contents",
       },
     },
     es: {
@@ -135,6 +143,14 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Escúchanos en VIVO",
         radioHora: "Hora",
         radioPrograma: "Programa",
+        viewConfesion: "Ver Confesión de Fe",
+        backToHome: "Volver al Inicio",
+        confesionTitle: "Confesión de Fe",
+        confesionText: "Nuestra confesión de fe completa está disponible en esta página. Este documento describe nuestras creencias fundamentales, principios congregacionales, raíces históricas e identidad doctrinal como Iglesia Cristiana Evangélica.",
+        confesionNote: "",
+        footerContactTitle: "Contacto",
+        footerFollowTitle: "Síguenos",
+        tableOfContents: "Índice de Contenidos",
       },
     },
     de: {
@@ -165,6 +181,8 @@ i18n.use(initReactI18next).init({
         contactCaptchaError: "Bitte bestätigen Sie das Captcha",
         contactMessageSubmit: "Jetzt senden",
         footerTitle: "ICE-PM",
+        footerFollowTitle: "Folgen Sie uns",
+        footerContactTitle: "Kontaktieren Sie uns",
         footerDescription:
           "Wir sind eine Gemeinde, die auf Jesus Christus und sein Wort ausgerichtet ist. Wir ermutigen unsere Mitglieder, das biblische Ziel zu leben: für Gott und für andere zu leben.",
         footerRights: "ICE-PM © 2025. Puerto Madryn, Argentinien",
@@ -201,6 +219,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Hören Sie uns LIVE",
         radioHora: "Zeit",
         radioPrograma: "Programm",
+        viewConfesion: "Glaubensbekenntnis ansehen",
+        backToHome: "Zurück zur Startseite",
+        confesionTitle: "Glaubensbekenntnis",
+        confesionText: "Unser vollständiges Glaubensbekenntnis ist auf Spanisch verfügbar. Dieses Dokument beschreibt unsere Grundüberzeugungen, Gemeindeprinzipien, historischen Wurzeln und doktrinäre Identität als Evangelische Christliche Kirche.",
+        confesionNote: "Hinweis: Der vollständige Text unseres Glaubensbekenntnisses ist derzeit nur auf Spanisch verfügbar, da er die Gründungsdokumente unserer Kirchengemeinde in Argentinien darstellt.",
+        tableOfContents: "Inhaltsverzeichnis"
       },
     },
     "pt-BR": {
@@ -233,6 +257,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "Somos uma igreja centrada em Jesus Cristo e em Sua Palavra. Conduzimos nossos membros a expressar o propósito bíblico de viver para Deus e para os outros.",
         footerRights: "ICE-PM © 2025. Puerto Madryn",
+        footerFollowTitle: "Siga-nos",
+        footerContactTitle: "Contate-nos",
         heroTitle: "Jesus é a resposta para a sua necessidade!",
         heroSubtitle:
           "Esperamos por você em uma de nossas reuniões de fim de semana. Um tempo para adorar juntos e ouvir a Palavra de Deus.",
@@ -266,6 +292,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Ouça-nos AO VIVO",
         radioHora: "Hora",
         radioPrograma: "Programa",
+        viewConfesion: "Ver Confissão de Fé",
+        backToHome: "Voltar ao Início",
+        confesionTitle: "Confissão de Fé",
+        confesionText: "Nossa confissão de fé completa está disponível em espanhol. Este documento descreve nossas crenças fundamentais, princípios congregacionais, raízes históricas e identidade doutrinária como Igreja Cristã Evangélica.",
+        confesionNote: "Nota: O texto completo de nossa Confissão de Fé está atualmente disponível apenas em espanhol, pois representa os documentos fundamentais de nossa comunidade eclesiástica na Argentina.",
+        tableOfContents: "Índice",
       },
     },
     it: {
@@ -300,6 +332,8 @@ i18n.use(initReactI18next).init({
           "Siamo una Chiesa centrata su Gesù Cristo e sulla Sua Parola. Guidiamo i nostri membri a vivere lo scopo biblico di vivere per Dio e per gli altri.",
         footerRights: "ICE-PM © 2025. Puerto Madryn",
         heroTitle: "Gesù è la risposta al tuo bisogno!",
+        heroFollowTitle: "Segui-ni",
+        heroContactTitle: "Contattaci",
         heroSubtitle:
           "Ti aspettiamo a uno dei nostri incontri del fine settimana. Un tempo per adorare insieme e ascoltare la Parola di Dio.",
         heroTimetables: "Vedi orari",
@@ -332,6 +366,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Ascoltaci LIVE",
         radioHora: "Orario",
         radioPrograma: "Programma",
+        viewConfesion: "Vedi Confessione di Fede",
+        backToHome: "Torna alla Home",
+        confesionTitle: "Confessione di Fede",
+        confesionText: "La nostra confessione di fede completa è disponibile in spagnolo. Questo documento delinea le nostre convinzioni fondamentali, i principi congregazionali, le radici storiche e l'identità dottrinale come Chiesa Cristiana Evangelica.",
+        confesionNote: "Nota: Il testo completo della nostra Confessione di Fede è attualmente disponibile solo in spagnolo, poiché rappresenta i documenti fondamentali della nostra comunità ecclesiale in Argentina.",
+        tableOfContents: "Indice",
       },
     },
     pt: {
@@ -364,6 +404,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "Somos uma igreja centrada em Jesus Cristo e na Sua Palavra. Conduzimos os nossos membros a viver o propósito bíblico de viver para Deus e para os outros.",
         footerRights: "ICE-PM © 2025. Puerto Madryn",
+        footerFollowTitle: "Siga-nos",
+        footerContactTitle: "Contate-nos",
         heroTitle: "Jesus é a resposta para a tua necessidade!",
         heroSubtitle:
           "Esperamos por ti numa das nossas reuniões de fim de semana. Um tempo para adorar juntos e ouvir a Palavra de Deus.",
@@ -397,6 +439,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Ouça-nos AO VIVO",
         radioHora: "Hora",
         radioPrograma: "Programa",
+        viewConfesion: "Ver Confissão de Fé",
+        backToHome: "Voltar ao Início",
+        confesionTitle: "Confissão de Fé",
+        confesionText: "A nossa confissão de fé completa está disponível em espanhol. Este documento descreve as nossas crenças fundamentais, princípios congregacionais, raízes históricas e identidade doutrinária como Igreja Cristã Evangélica.",
+        confesionNote: "Nota: O texto completo da nossa Confissão de Fé está atualmente disponível apenas em espanhol, pois representa os documentos fundamentais da nossa comunidade eclesiástica na Argentina.",
+        tableOfContents: "Índice",
       },
     },
     ru: {
@@ -430,6 +478,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "Мы церковь, сосредоточенная на Иисусе Христе и Его Слове. Мы помогаем нашим членам жить по библейской цели — жить для Бога и для других.",
         footerRights: "ICE-PM © 2025. Пуэрто-Мадрин, Аргентина",
+        footerFollowTitle: "Следуй за нами",
+        footerContactTitle: "Свяжитесь с нами",
         heroTitle: "Иисус — ответ на вашу потребность!",
         heroSubtitle:
           "Мы ждём вас на одной из наших встреч в выходные. Время для совместного поклонения и слушания Слова Божьего.",
@@ -463,6 +513,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Слушайте нас В ПРЯМОМ ЭФИРЕ",
         radioHora: "Время",
         radioPrograma: "Программа",
+        viewConfesion: "Посмотреть Исповедание веры",
+        backToHome: "Вернуться на главную",
+        confesionTitle: "Исповедание веры",
+        confesionText: "Наше полное исповедание веры доступно на испанском языке. Этот документ описывает наши основные убеждения, принципы общины, исторические корни и доктринальную идентичность как Евангельской Христианской Церкви.",
+        confesionNote: "Примечание: Полный текст нашего Исповедания веры в настоящее время доступен только на испанском языке, поскольку он представляет собой основополагающие документы нашей церковной общины в Аргентине.",
+        tableOfContents: "Содержание",
       },
     },
     zh: {
@@ -495,6 +551,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "我们是一所以耶稣基督和祂的话为中心的教会。我们带领会员活出圣经的目标——为神和他人而活。",
         footerRights: "ICE-PM © 2025. 普埃尔托马德林, 阿根廷",
+        footerFollowTitle: "跟随我们",
+        footerContactTitle: "联系我们",
         heroTitle: "耶稣是你需求的答案！",
         heroSubtitle:
           "欢迎你参加我们的周末聚会。一个共同敬拜并聆听神话语的时间。",
@@ -528,6 +586,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "直播收听",
         radioHora: "时间",
         radioPrograma: "节目",
+        viewConfesion: "查看信仰告白",
+        backToHome: "返回主页",
+        confesionTitle: "信仰告白",
+        confesionText: "我们完整的信仰告白以西班牙语提供。本文件概述了我们作为福音派基督教会的核心信仰、会众原则、历史根源和教义身份。",
+        confesionNote: "注意：我们信仰告白的完整文本目前仅提供西班牙语版本，因为它代表了我们在阿根廷教会社区的基础文件。",
+        tableOfContents: "目录",
       },
     },
     ja: {
@@ -560,6 +624,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "私たちはイエス・キリストとその御言葉に焦点を当てた教会です。会員が神と他者のために生きるという聖書の目的を実践するよう導きます。",
         footerRights: "ICE-PM © 2025. プエルトマドリン, アルゼンチン",
+        footerFollowTitle: "フォローする",
+        footerContactTitle: "お問い合わせ",
         heroTitle: "イエスはあなたの必要に対する答えです！",
         heroSubtitle:
           "週末の集会のいずれかにぜひご参加ください。共に礼拝し、神の御言葉を聞く時間です。",
@@ -593,6 +659,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "ライブで聴く",
         radioHora: "時間",
         radioPrograma: "番組",
+        viewConfesion: "信仰告白を見る",
+        backToHome: "ホームに戻る",
+        confesionTitle: "信仰告白",
+        confesionText: "私たちの完全な信仰告白はスペイン語で利用できます。この文書は、福音派キリスト教会としての私たちの核心的信念、会衆の原則、歴史的ルーツ、教義的アイデンティティを概説しています。",
+        confesionNote: "注：私たちの信仰告白の完全なテキストは現在スペイン語でのみ利用可能です。これはアルゼンチンの教会コミュニティの基礎文書を表しているためです。",
+        tableOfContents: "目次",
       },
     },
     fr: {
@@ -626,6 +698,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "Nous sommes une église centrée sur Jésus-Christ et Sa Parole. Nous guidons nos membres à exprimer l'objectif biblique de vivre pour Dieu et pour les autres.",
         footerRights: "ICE-PM © 2025. Puerto Madryn, Argentine",
+        footerFollowTitle: "Suivez-nous",
+        footerContactTitle: "Contactez-nous",
         heroTitle: "Jésus est la réponse à vos besoins !",
         heroSubtitle:
           "Nous vous attendons à l'une de nos réunions du week-end. Un moment pour adorer ensemble et écouter la Parole de Dieu.",
@@ -659,6 +733,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "Écoutez-nous EN DIRECT",
         radioHora: "Heure",
         radioPrograma: "Programme",
+        viewConfesion: "Voir la Confession de Foi",
+        backToHome: "Retour à l'Accueil",
+        confesionTitle: "Confession de Foi",
+        confesionText: "Notre confession de foi complète est disponible en espagnol. Ce document décrit nos croyances fondamentales, nos principes congrégationalistes, nos racines historiques et notre identité doctrinale en tant qu'Église Chrétienne Évangélique.",
+        confesionNote: "Note : Le texte complet de notre Confession de Foi est actuellement disponible uniquement en espagnol, car il représente les documents fondateurs de notre communauté ecclésiale en Argentine.",
+        tableOfContents: "Table des matières",
       },
     },
     ko: {
@@ -688,6 +768,8 @@ i18n.use(initReactI18next).init({
         contactCaptchaError: "캡차를 확인해주세요",
         contactMessageSubmit: "지금 보내기",
         footerTitle: "ICE-PM",
+        footerFollowTitle: "팔로우",
+        footerContactTitle: "문의하기",
         footerDescription:
           "우리는 예수 그리스도와 그분의 말씀에 중심을 둔 교회입니다. 우리 회원들이 하나님과 이웃을 위해 살아가도록 인도합니다.",
         footerRights: "ICE-PM © 2025. 푸에르토마드린, 아르헨티나",
@@ -724,6 +806,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "LIVE로 청취",
         radioHora: "시간",
         radioPrograma: "프로그램",
+        viewConfesion: "신앙고백 보기",
+        backToHome: "홈으로 돌아가기",
+        confesionTitle: "신앙고백",
+        confesionText: "우리의 완전한 신앙고백은 스페인어로 제공됩니다. 이 문서는 복음주의 기독교회로서 우리의 핵심 신념, 회중 원칙, 역사적 뿌리 및 교리적 정체성을 설명합니다.",
+        confesionNote: "참고: 우리 신앙고백의 전체 텍스트는 현재 스페인어로만 제공됩니다. 이는 아르헨티나 교회 공동체의 기초 문서를 나타내기 때문입니다.",
+        tableOfContents: "목차",
       },
     },
     hi: {
@@ -754,6 +842,8 @@ i18n.use(initReactI18next).init({
         contactCaptchaError: "कृपया कैप्चा सत्यापित करें",
         contactMessageSubmit: "अभी भेजें",
         footerTitle: "ICE-PM",
+        footerFollowTitle: "फॉलोव",
+        footerContactTitle: "संपर्क करें",
         footerDescription:
           "हम एक ऐसा चर्च हैं जो यीशु मसीह और उनके वचन पर केंद्रित है। हम अपने सदस्यों को बाइबिलीय उद्देश्य के अनुसार जीने के लिए प्रेरित करते हैं — परमेश्वर और दूसरों के लिए जीना।",
         footerRights: "ICE-PM © 2025. पुएर्तो माद्रीन, अर्जेंटीना",
@@ -790,6 +880,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "लाइव सुनें",
         radioHora: "समय",
         radioPrograma: "कार्यक्रम",
+        viewConfesion: "विश्वास का कथन देखें",
+        backToHome: "मुखपृष्ठ पर वापस जाएं",
+        confesionTitle: "विश्वास का कथन",
+        confesionText: "हमारा पूर्ण विश्वास का कथन स्पेनिश में उपलब्ध है। यह दस्तावेज़ एक इवांजेलिकल क्रिश्चियन चर्च के रूप में हमारे मूल विश्वासों, मण्डली सिद्धांतों, ऐतिहासिक जड़ों और सिद्धांतिक पहचान को रेखांकित करता है।",
+        confesionNote: "नोट: हमारे विश्वास के कथन का पूर्ण पाठ वर्तमान में केवल स्पेनिश में उपलब्ध है, क्योंकि यह अर्जेंटीना में हमारे चर्च समुदाय के मूलभूत दस्तावेजों का प्रतिनिधित्व करता है।",
+        tableOfContents: "सूचना",
       },
     },
     ar: {
@@ -822,6 +918,8 @@ i18n.use(initReactI18next).init({
         footerDescription:
           "نحن كنيسة تركز على يسوع المسيح وكلمته. نرشد أعضاءنا للعيش وفقًا للغرض الكتابي: أن نعيش من أجل الله وللآخرين.",
         footerRights: "ICE-PM © 2025. بويرتو مادرين، الأرجنتين",
+        footerFollowTitle: "اتصل بنا",
+        footerContactTitle: "اتصل بنا",
         heroTitle: "يسوع هو الحل لاحتياجاتك!",
         heroSubtitle:
           "نرحب بك في أحد اجتماعات عطلة نهاية الأسبوع لدينا. وقت للعبادة معًا والاستماع إلى كلمة الله.",
@@ -855,6 +953,12 @@ i18n.use(initReactI18next).init({
         radioSubtitle: "استمع إلينا مباشرة",
         radioHora: "الوقت",
         radioPrograma: "البرنامج",
+        viewConfesion: "عرض بيان الإيمان",
+        backToHome: "العودة إلى الصفحة الرئيسية",
+        confesionTitle: "بيان الإيمان",
+        confesionText: "بيان إيماننا الكامل متاح باللغة الإسبانية. توضح هذه الوثيقة معتقداتنا الأساسية ومبادئ الجماعة والجذور التاريخية والهوية العقائدية ككنيسة مسيحية إنجيلية.",
+        confesionNote: "ملاحظة: النص الكامل لبيان إيماننا متاح حاليًا باللغة الإسبانية فقط، لأنه يمثل الوثائق التأسيسية لمجتمع كنيستنا في الأرجنتين.",
+        tableOfContents: "جدول محتويات",
       },
     },
   },

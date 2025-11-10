@@ -4,12 +4,16 @@ import logo from "../../assets/logo.svg";
 import { useEffect, useState, useRef } from "preact/hooks";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import { route } from "preact-router";
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
     const menuIconSize = 30;
     const { t } = useTranslation();
     const navRef = useRef(null);
+    
+    // Detectar si estamos en la página de Confesión de Fe
+    const isConfesionPage = window.location.pathname === '/confesion-de-fe';
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -36,50 +40,92 @@ const Navbar = () => {
         mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
     };
 
+    const handleNavClick = () => {
+        if (isConfesionPage) {
+            route("/");
+        }
+    };
+
     // @ts-ignore
     return (
-        <nav ref={navRef} className={`container ${sticky ? "dark-nav" : ""}`}>
-            <img src={logo} alt="Logo" className="logo" />
+        <nav ref={navRef} className={`container ${sticky ? "dark-nav" : ""} ${isConfesionPage ? "confesion-nav" : ""}`}>
+            <img 
+                src={logo} 
+                alt="Logo" 
+                className="logo" 
+                onClick={() => route("/")} 
+                style={{ cursor: 'pointer' }}
+            />
             <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
                 <li>
-                    <Link to="hero" smooth={true} offset={0} duration={500}>
-                        <p>{t("navbarInicio")}</p>
-                    </Link>
+                    {isConfesionPage ? (
+                        <a onClick={handleNavClick} style={{ cursor: 'pointer' }}>
+                            <p>{t("navbarInicio")}</p>
+                        </a>
+                    ) : (
+                        <Link to="hero" smooth={true} offset={0} duration={500}>
+                            <p>{t("navbarInicio")}</p>
+                        </Link>
+                    )}
                 </li>
                 <li>
-                    <Link to="about" smooth={true} offset={-150} duration={500}>
-                        <p>{t("navbarSobreNosotros")}</p>
-                    </Link>
+                    {isConfesionPage ? (
+                        <a onClick={handleNavClick} style={{ cursor: 'pointer' }}>
+                            <p>{t("navbarSobreNosotros")}</p>
+                        </a>
+                    ) : (
+                        <Link to="about" smooth={true} offset={-150} duration={500}>
+                            <p>{t("navbarSobreNosotros")}</p>
+                        </Link>
+                    )}
                 </li>
                 <li>
-                    <Link
-                        to="horarios"
-                        smooth={true}
-                        offset={-210}
-                        duration={500}
-                    >
-                        <p>{t("navbarActividades")}</p>
-                    </Link>
+                    {isConfesionPage ? (
+                        <a onClick={handleNavClick} style={{ cursor: 'pointer' }}>
+                            <p>{t("navbarActividades")}</p>
+                        </a>
+                    ) : (
+                        <Link
+                            to="horarios"
+                            smooth={true}
+                            offset={-210}
+                            duration={500}
+                        >
+                            <p>{t("navbarActividades")}</p>
+                        </Link>
+                    )}
                 </li>
                 <li>
-                    <Link
-                        to="radio"
-                        smooth={true}
-                        offset={-210}
-                        duration={500}
-                    >
-                        <p>{t("navbarRadio")}</p>
-                    </Link>
+                    {isConfesionPage ? (
+                        <a onClick={handleNavClick} style={{ cursor: 'pointer' }}>
+                            <p>{t("navbarRadio")}</p>
+                        </a>
+                    ) : (
+                        <Link
+                            to="radio"
+                            smooth={true}
+                            offset={-210}
+                            duration={500}
+                        >
+                            <p>{t("navbarRadio")}</p>
+                        </Link>
+                    )}
                 </li>
                 <li>
-                    <Link
-                        to="contact"
-                        smooth={true}
-                        offset={-260}
-                        duration={500}
-                    >
-                        <p>{t("navbarContacto")}</p>
-                    </Link>
+                    {isConfesionPage ? (
+                        <a onClick={handleNavClick} style={{ cursor: 'pointer' }}>
+                            <p>{t("navbarContacto")}</p>
+                        </a>
+                    ) : (
+                        <Link
+                            to="contact"
+                            smooth={true}
+                            offset={-260}
+                            duration={500}
+                        >
+                            <p>{t("navbarContacto")}</p>
+                        </Link>
+                    )}
                 </li>
                 <li>
                     <a

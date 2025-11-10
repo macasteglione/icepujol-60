@@ -32,6 +32,10 @@ nav ul li p:hover {
     transition: .5s;
 }
 
+.confesion-nav {
+    background: #002047;
+}
+
 .menu-icon {
     display: none;
 }

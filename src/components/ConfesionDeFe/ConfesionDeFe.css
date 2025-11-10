@@ -1,0 +1,313 @@
+.confesion-container {
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.confesion-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    background: #212ea0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #1a2380;
+}
+
+.confesion-title {
+    font-size: 42px;
+    color: #002047;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.confesion-text {
+    color: #525252;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.confesion-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.confesion-text section {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.confesion-text section:last-child {
+    border-bottom: none;
+}
+
+.confesion-text h2 {
+    color: #212ea0;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.confesion-text h3 {
+    color: #002047;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.confesion-text ol {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    counter-reset: item;
+    list-style-type: none;
+}
+
+.confesion-text ol li {
+    margin-bottom: 18px;
+    line-height: 1.9;
+    position: relative;
+    padding-left: 40px;
+}
+
+.confesion-text ol li::before {
+    content: counter(item) ".";
+    counter-increment: item;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: #212ea0;
+    font-size: 19px;
+    min-width: 30px;
+}
+
+/* Listas no ordenadas (viñetas) */
+.confesion-text ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.confesion-text ul li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 25px;
+}
+
+.confesion-text ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #212ea0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Sub-listas dentro de items */
+.confesion-text ol li ol,
+.confesion-text ol li ul,
+.confesion-text ul li ol,
+.confesion-text ul li ul {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.confesion-text ol li ol li::before {
+    content: counter(item, lower-alpha) ")";
+    font-size: 16px;
+}
+
+/* Párrafos dentro de items de lista */
+.confesion-text ol li p,
+.confesion-text ul li p {
+    margin-bottom: 10px;
+    display: inline;
+}
+
+/* Mejorar espaciado de items largos */
+.confesion-text ol li:has(> p),
+.confesion-text ul li:has(> p) {
+    margin-bottom: 20px;
+}
+
+.confesion-text .source {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.confesion-text .author {
+    font-weight: 600;
+    color: #002047;
+    margin-top: 20px;
+}
+
+.confesion-text .bible-ref {
+    font-style: italic;
+    color: #212ea0;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Índice de contenidos */
+.table-of-contents {
+    background: #f8f9fa;
+    border-left: 4px solid #212ea0;
+    padding: 20px 30px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.table-of-contents h3 {
+    color: #002047;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 10px;
+}
+
+.table-of-contents a {
+    color: #212ea0;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.table-of-contents a:hover {
+    color: #1a2380;
+    transform: translateX(5px);
+    font-weight: 500;
+}
+
+.table-of-contents a::before {
+    content: "▸ ";
+    margin-right: 8px;
+}
+
+/* Botón de scroll to top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #212ea0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(33, 46, 160, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 0;
+}
+
+.scroll-to-top:hover {
+    background: #1a2380;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(33, 46, 160, 0.5);
+}
+
+.scroll-to-top svg {
+    width: 50px;
+    height: 50px;
+}
+
+/* Media Query */
+@media (max-width: 800px) {
+    .confesion-content {
+        padding: 20px;
+    }
+
+    .confesion-title {
+        font-size: 32px;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .confesion-text h2 {
+        font-size: 24px;
+    }
+
+    .confesion-text h3 {
+        font-size: 20px;
+    }
+
+    .table-of-contents {
+        padding: 15px 20px;
+    }
+
+    .table-of-contents h3 {
+        font-size: 18px;
+    }
+
+    .table-of-contents a {
+        font-size: 14px;
+    }
+
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .scroll-to-top svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .confesion-text ol li,
+    .confesion-text ul li {
+        padding-left: 30px;
+        font-size: 15px;
+    }
+
+    .confesion-text ol li::before {
+        font-size: 17px;
+    }
+
+    .confesion-text ul li::before {
+        font-size: 18px;
+    }
+}
