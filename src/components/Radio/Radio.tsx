@@ -424,8 +424,8 @@ const Radio = ({ sourceRef }) => {
     },
     {
       hora: "1:00",
-      programa: "Un Sermón para tu Semana",
-      maestro: "Equipo de Coalición Por El Evangelio",
+      programa: "Espacio Musical",
+      maestro: "Varios Compositores",
     },
     {
       hora: "2:00",
@@ -511,8 +511,8 @@ const Radio = ({ sourceRef }) => {
     },
     {
       hora: "12:00",
-      programa: "Un Sermón para tu Semana",
-      maestro: "Equipo de Coalición Por El Evangelio",
+      programa: "Predicación del Evangelio",
+      maestro: "Hermanos de la Iglesia",
     },
     {
       hora: "13:00",
@@ -887,4 +887,3 @@ const Radio = ({ sourceRef }) => {
 };
 
 export default Radio;
-
