@@ -36,6 +36,7 @@
 .about p {
   color: #525252;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 .about-right .btn {
