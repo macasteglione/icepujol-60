@@ -44,16 +44,6 @@ const Radio = ({ sourceRef }) => {
 
   const horariosDia1 = [
     {
-      hora: "0:00",
-      programa: "Gracia a Vosotros",
-      maestro: "John F. MacArthur",
-    },
-    {
-      hora: "0:30",
-      programa: "Espacio Musical",
-      maestro: "Varios Compositores",
-    },
-    {
       hora: "1:00",
       programa: "Predicación del Evangelio",
       maestro: "Hermanos de la Iglesia",
@@ -230,16 +220,6 @@ const Radio = ({ sourceRef }) => {
   ];
 
   const horariosDia2 = [
-    {
-      hora: "0:00",
-      programa: "Gracia a Vosotros",
-      maestro: "John F. MacArthur",
-    },
-    {
-      hora: "0:30",
-      programa: "Espacio Musical",
-      maestro: "Varios Compositores",
-    },
     {
       hora: "1:00",
       programa: "Predicación del Evangelio",
@@ -418,17 +398,7 @@ const Radio = ({ sourceRef }) => {
 
   const horariosFinDeSemana = [
     {
-      hora: "0:00",
-      programa: "Música Clásica",
-      maestro: "Varios Compositores",
-    },
-    {
       hora: "1:00",
-      programa: "Espacio Musical",
-      maestro: "Varios Compositores",
-    },
-    {
-      hora: "2:00",
       programa: "Predicación del Evangelio",
       maestro: "Hermanos de la Iglesia",
     },
