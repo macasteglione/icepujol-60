@@ -44,11 +44,6 @@ const Radio = ({ sourceRef }) => {
 
   const horariosDia1 = [
     {
-      hora: "1:00",
-      programa: "Predicación del Evangelio",
-      maestro: "Hermanos de la Iglesia",
-    },
-    {
       hora: "2:00",
       programa: "Sabiduría Internacional",
       maestro: "Stephen Davey",
@@ -139,11 +134,6 @@ const Radio = ({ sourceRef }) => {
       maestro: "Varios Compositores",
     },
     {
-      hora: "13:00",
-      programa: "Predicación del Evangelio",
-      maestro: "Hermanos de la Iglesia",
-    },
-    {
       hora: "14:00",
       programa: "Sabiduría Internacional",
       maestro: "Stephen Davey",
@@ -220,11 +210,6 @@ const Radio = ({ sourceRef }) => {
   ];
 
   const horariosDia2 = [
-    {
-      hora: "1:00",
-      programa: "Predicación del Evangelio",
-      maestro: "Hermanos de la Iglesia",
-    },
     {
       hora: "2:00",
       programa: "Sabiduría Internacional",
@@ -316,11 +301,6 @@ const Radio = ({ sourceRef }) => {
       maestro: "Charles Stanley",
     },
     {
-      hora: "13:00",
-      programa: "Predicación del Evangelio",
-      maestro: "Hermanos de la Iglesia",
-    },
-    {
       hora: "14:00",
       programa: "Sabiduría Internacional",
       maestro: "Stephen Davey",
@@ -398,11 +378,6 @@ const Radio = ({ sourceRef }) => {
 
   const horariosFinDeSemana = [
     {
-      hora: "1:00",
-      programa: "Predicación del Evangelio",
-      maestro: "Hermanos de la Iglesia",
-    },
-    {
       hora: "3:00",
       programa: "Proyecto Biblia Pódcast",
       maestro: "Tim Mackie y Jon Collins",
@@ -478,11 +453,6 @@ const Radio = ({ sourceRef }) => {
       hora: "11:30",
       programa: "Espacio Musical",
       maestro: "Varios Compositores",
-    },
-    {
-      hora: "12:00",
-      programa: "Predicación del Evangelio",
-      maestro: "Hermanos de la Iglesia",
     },
     {
       hora: "13:00",
