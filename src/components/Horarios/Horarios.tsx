@@ -46,7 +46,7 @@ const Horarios = () => {
     },
     {
       hora: "11:00",
-      domingo: t("horariosExplicacionEvangelio"),
+      //domingo: t("horariosExplicacionEvangelio"),
       //domingo: t("horariosEscuelaDominical"),
       lunes: "-",
       martes: "-",
@@ -63,8 +63,8 @@ const Horarios = () => {
       miercoles: "-",
       jueves: "-",
       viernes: "-",
-      sabado: "-",
-      //sabado: t("horariosReunionPreadolescentes"),
+      //sabado: "-",
+      sabado: t("horariosReunionPreadolescentes"),
     },
     {
       hora: "15:30",
@@ -101,16 +101,17 @@ const Horarios = () => {
     },
     {
       hora: "20:00",
-      domingo: "-",
+      //domingo: "-",
+      domingo: t("horariosExplicacionEvangelio"),
       lunes: "-",
       martes: t("horariosReunionOracion"),
       miercoles: "-",
-      jueves: "-",
-      //jueves: t("horariosEstudioBiblico"),
+      //jueves: "-",
+      jueves: t("horariosEstudioBiblico"),
       viernes: "-",
       //viernes: t("horariosReunionJovenes"),
-      sabado: "-",
-      //sabado: t("horariosReunionJovenes"),
+      //sabado: "-",
+      sabado: t("horariosReunionJovenes"),
     },
   ];
 
