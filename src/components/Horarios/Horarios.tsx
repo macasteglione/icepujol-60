@@ -47,7 +47,7 @@ const Horarios = () => {
     {
       hora: "11:00",
       //domingo: t("horariosExplicacionEvangelio"),
-      //domingo: t("horariosEscuelaDominical"),
+      domingo: t("horariosEscuelaDominical"),
       lunes: "-",
       martes: "-",
       miercoles: "-",
@@ -69,8 +69,8 @@ const Horarios = () => {
     {
       hora: "15:30",
       domingo: "-",
-      lunes: "-",
-      //lunes: t("horariosReunionFemenina"),
+      //lunes: "-",
+      lunes: t("horariosReunionFemenina"),
       martes: "-",
       miercoles: "-",
       jueves: "-",
