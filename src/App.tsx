@@ -5,6 +5,7 @@ import "./i18n.ts";
 import { useTranslation } from "react-i18next";
 import Home from "./components/Home/Home";
 import ConfesionDeFe from "./components/ConfesionDeFe/ConfesionDeFe";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
     const { i18n, t } = useTranslation();
@@ -15,6 +16,7 @@ const App = () => {
 
     return (
         <div>
+            <Analytics/>
             <SpeedInsights />
             <Router>
                 <Home path="/" />
