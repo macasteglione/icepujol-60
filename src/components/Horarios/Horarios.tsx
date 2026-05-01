@@ -85,8 +85,8 @@ const Horarios = () => {
       miercoles: "-",
       jueves: "-",
       viernes: "-",
-      sabado: "-",
-      //sabado: t("horariosReunionAdolescentes"),
+      //sabado: "-",
+      sabado: t("horariosReunionAdolescentes"),
     },
     {
       hora: "19:00",
