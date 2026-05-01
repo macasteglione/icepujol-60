@@ -90,8 +90,8 @@ const Horarios = () => {
     },
     {
       hora: "19:00",
-      domingo: "-",
-      //domingo: t("horariosExplicacionEvangelio"),
+      //domingo: "-",
+      domingo: t("horariosExplicacionEvangelio"),
       lunes: "-",
       martes: "-",
       miercoles: "-",
@@ -101,8 +101,8 @@ const Horarios = () => {
     },
     {
       hora: "20:00",
-      //domingo: "-",
-      domingo: t("horariosExplicacionEvangelio"),
+      domingo: "-",
+      //domingo: t("horariosExplicacionEvangelio"),
       lunes: "-",
       martes: t("horariosReunionOracion"),
       miercoles: "-",
