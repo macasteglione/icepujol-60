@@ -128,6 +128,13 @@ const Navbar = () => {
                     )}
                 </li>
                 <li>
+                    <a style={{ cursor: 'pointer' }}
+                        href="https://buscampa.com.ar"
+                    >
+                        <p>Buscampa</p>
+                    </a>
+                </li>
+                <li>
                     <a
                         href="https://donaronline.org/ice-puerto-madryn/donacion-iglesia-cristiana-evangelica"
                         className="btn"
