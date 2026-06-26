@@ -379,11 +379,6 @@ const Radio = ({ sourceRef }) => {
   const horariosFinDeSemana = [
     {
       hora: "3:00",
-      programa: "Proyecto Biblia Pódcast",
-      maestro: "Tim Mackie y Jon Collins",
-    },
-    {
-      hora: "4:00",
       programa: "Espacio Musical",
       maestro: "Varios Compositores",
     },
@@ -408,7 +403,6 @@ const Radio = ({ sourceRef }) => {
       programa: "Espacio Musical",
       maestro: "Varios Compositores",
     },
-    { hora: "7:00", programa: "Luis Palau Responde", maestro: "Luis Palau" },
     {
       hora: "7:30",
       programa: "Pedrito el Pulpo - Viajeros",
@@ -475,11 +469,6 @@ const Radio = ({ sourceRef }) => {
       maestro: "Varios Compositores",
     },
     {
-      hora: "15:00",
-      programa: "Proyecto Biblia Pódcast",
-      maestro: "Tim Mackie y Jon Collins",
-    },
-    {
       hora: "16:00",
       programa: "A Través de la Biblia - Alimento para el Alma",
       maestro: "Samuel Montoya, Esteban Larrosa",
@@ -505,9 +494,8 @@ const Radio = ({ sourceRef }) => {
       programa: "Pedrito el Pulpo - Viajeros",
       maestro: "Radio Trans Mundial, Llamada de Medianoche",
     },
-    { hora: "19:00", programa: "Luis Palau Responde", maestro: "Luis Palau" },
     {
-      hora: "19:30",
+      hora: "19:00",
       programa: "Espacio Musical",
       maestro: "Varios Compositores",
     },
