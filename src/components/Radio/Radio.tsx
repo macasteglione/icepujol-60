@@ -217,8 +217,8 @@ const Radio = ({ sourceRef }) => {
     },
     {
       hora: "2:30",
-      programa: "Tierra Firme",
-      maestro: "Esteban Larrosa y Salvador Dellutri",
+      programa: "Entre Amigas",
+      maestro: "Llamada de Medianoche",
     },
     {
       hora: "3:00",
@@ -271,8 +271,8 @@ const Radio = ({ sourceRef }) => {
     },
     {
       hora: "9:30",
-      programa: "Entre Amigas",
-      maestro: "Llamada de Medianoche",
+      programa: "Tierra Firme",
+      maestro: "Esteban Larrosa y Salvador Dellutri",
     },
     {
       hora: "10:00",
@@ -307,8 +307,8 @@ const Radio = ({ sourceRef }) => {
     },
     {
       hora: "14:30",
-      programa: "Tierra Firme",
-      maestro: "Esteban Larrosa y Salvador Dellutri",
+      programa: "Entre Amigas",
+      maestro: "Llamada de Medianoche",
     },
     {
       hora: "15:00",
@@ -445,11 +445,6 @@ const Radio = ({ sourceRef }) => {
     },
     {
       hora: "11:30",
-      programa: "Espacio Musical",
-      maestro: "Varios Compositores",
-    },
-    {
-      hora: "13:00",
       programa: "Espacio Musical",
       maestro: "Varios Compositores",
     },
