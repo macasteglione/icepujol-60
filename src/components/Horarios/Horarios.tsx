@@ -38,10 +38,7 @@ const Horarios = () => {
       hora: "09:30",
       domingo: t("horariosSantaCena"),
       lunes: "-",
-      martes: "-",
       miercoles: "-",
-      jueves: "-",
-      viernes: "-",
       sabado: "-",
     },
     {
@@ -49,20 +46,14 @@ const Horarios = () => {
       //domingo: t("horariosExplicacionEvangelio"),
       domingo: t("horariosEscuelaDominical"),
       lunes: "-",
-      martes: "-",
       miercoles: "-",
-      jueves: "-",
-      viernes: "-",
       sabado: "-",
     },
     {
       hora: "14:30",
       domingo: "-",
       lunes: "-",
-      martes: "-",
       miercoles: "-",
-      jueves: "-",
-      viernes: "-",
       //sabado: "-",
       sabado: t("horariosReunionPreadolescentes"),
     },
@@ -71,47 +62,33 @@ const Horarios = () => {
       domingo: "-",
       //lunes: "-",
       lunes: t("horariosReunionFemenina"),
-      martes: "-",
       miercoles: "-",
-      jueves: "-",
-      viernes: "-",
       sabado: "-",
     },
     {
       hora: "17:00",
       domingo: "-",
       lunes: "-",
-      martes: "-",
       miercoles: "-",
-      jueves: "-",
-      viernes: "-",
       //sabado: "-",
       sabado: t("horariosReunionAdolescentes"),
     },
     {
       hora: "19:00",
-      //domingo: "-",
-      domingo: t("horariosExplicacionEvangelio"),
+      domingo: "-",
+      //domingo: t("horariosExplicacionEvangelio"),
       lunes: "-",
-      martes: "-",
-      miercoles: t("horariosReunionOracionEstudio"),
-      jueves: "-",
-      viernes: "-",
+      miercoles: "-",
+      //miercoles: t("horariosReunionOracionEstudio"),
       sabado: "-",
     },
     {
       hora: "20:00",
-      domingo: "-",
-      //domingo: t("horariosExplicacionEvangelio"),
+      //domingo: "-",
+      domingo: t("horariosExplicacionEvangelio"),
       lunes: "-",
-      martes: "-",
-      //martes: t("horariosReunionOracion"),
-      miercoles: "-",
-      jueves: "-",
-      //jueves: t("horariosEstudioBiblico"),
-      viernes: "-",
-      //viernes: t("horariosReunionJovenes"),
-      //sabado: "-",
+      //miercoles: "-",
+      miercoles: t("horariosReunionOracionEstudio"),
       sabado: t("horariosReunionJovenes"),
     },
   ];
@@ -132,16 +109,7 @@ const Horarios = () => {
                 <h3>{t("horariosLunes")}</h3>
               </StyledTableCell>
               <StyledTableCell align="center">
-                <h3>{t("horariosMartes")}</h3>
-              </StyledTableCell>
-              <StyledTableCell align="center">
                 <h3>{t("horariosMiercoles")}</h3>
-              </StyledTableCell>
-              <StyledTableCell align="center">
-                <h3>{t("horariosJueves")}</h3>
-              </StyledTableCell>
-              <StyledTableCell align="center">
-                <h3>{t("horariosViernes")}</h3>
               </StyledTableCell>
               <StyledTableCell align="center">
                 <h3>{t("horariosSabado")}</h3>
@@ -154,12 +122,9 @@ const Horarios = () => {
                 <StyledTableCell align="center">{row.hora}</StyledTableCell>
                 <StyledTableCell align="center">{row.domingo}</StyledTableCell>
                 <StyledTableCell align="center">{row.lunes}</StyledTableCell>
-                <StyledTableCell align="center">{row.martes}</StyledTableCell>
                 <StyledTableCell align="center">
                   {row.miercoles}
                 </StyledTableCell>
-                <StyledTableCell align="center">{row.jueves}</StyledTableCell>
-                <StyledTableCell align="center">{row.viernes}</StyledTableCell>
                 <StyledTableCell align="center">{row.sabado}</StyledTableCell>
               </StyledTableRow>
             ))}
