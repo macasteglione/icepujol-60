@@ -54,11 +54,6 @@ const Radio = ({ sourceRef }) => {
       maestro: "Varios Compositores",
     },
     {
-      hora: "3:00",
-      programa: "Renovando Tu Mente",
-      maestro: "Robert C. Sproul",
-    },
-    {
       hora: "3:30",
       programa: "A Través de la Biblia - Alimento para el Alma",
       maestro: "Samuel Montoya, Esteban Larrosa",
@@ -176,11 +171,6 @@ const Radio = ({ sourceRef }) => {
       hora: "19:30",
       programa: "Aviva Nuestros Corazones",
       maestro: "Patricia de Saladin",
-    },
-    {
-      hora: "20:00",
-      programa: "Renovando Tu Mente",
-      maestro: "Robert C. Sproul",
     },
     {
       hora: "20:30",
